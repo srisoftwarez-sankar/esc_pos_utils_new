@@ -53,7 +53,7 @@ class CapabilityProfile {
   }
 
   static Future<List<dynamic>> getAvailableProfiles() async {
-    final content = await rootBundle.loadString('packages/esc_pos_utils/resources/capabilities.json');
+    final content = await rootBundle.loadString('packages/esc_pos_utils_new/resources/capabilities.json');
     Map capabilities = json.decode(content);
 
     var profiles = capabilities['profiles'];
